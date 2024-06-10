@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Non-Profit API</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Non-Profit Finder</h1>
+	</header>
+
+	<div class="widgets">
+		<form>
+			<label for="searchterm">Causes:</label>
+			<input id="searchterm" placeholder="Type causes here..." list="causes">
+			<datalist id="causes">
+				<option value="adoption">Adoption</option>
+				<option value="animals">Animals</option>
+				<option value="art">Art</option>
+				<option value="black-led">Black-led</option>
+				<option value="cancer">Cancer</option>
+				<option value="cats">Cats</option>
+				<option value="climate">Climate</option>
+				<option value="conservation">Conservation</option>
+				<option value="disabilities">Disabilities</option>
+				<option value="disease">Disease</option>
+				<option value="dogs">Dogs</option>
+				<option value="education">Education</option>
+				<option value="environment">Environment</option>
+				<option value="food-security">Food Security</option>
+				<option value="gender-equality">Gender-Equality</option>
+				<option value="health">Health</option>
+				<option value="housing">Housing</option>
+				<option value="immigrants">Immigrants</option>
+				<option value="lgbt">LGBTQIA+</option>
+				<option value="mental-health">Mental Health</option>
+				<option value="oceans">Oceans</option>
+				<option value="racial-justice">Racial Justice</option>
+				<option value="refugees">Refugees</option>
+				<option value="ukraine">Ukraine</option>
+				<option value="veterans">Veterans</option>
+				<option value="votingrights">Voting Rights</option>
+				<option value="women-led">Women-Led</option>
+				<option value="womens-health">Womens' Health</option>
+				<option value="youth">Youth</option>
+			</datalist>
+		</form>
+	</div>
+
+	<div class="widgets">
+		Number of results: 
+		<select id="limit">
+			<option value="5" selected>5</option>
+			<option value="10">10</option>
+			<option value="25">20</option>
+			<option value="50">50</option>
+		</select>
+	</div>
+
+	<div class="widgets">
+		<button type="button" id="search" class="green">Find some Non-Profits!<br></button>
+	</div>
+	<div id="status">Ready to Search!</div>
+	<hr>
+
+	<h2>Results</h2>
+
+	<div id="content">
+		<p>No data yet!</p>
+	</div>
+
+
+</body>
+
+</html>
